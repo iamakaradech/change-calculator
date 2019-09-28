@@ -1,10 +1,11 @@
 export const calculate = (money, change) => {
   let validateRule = new RegExp(/^(\d+\.\d+)$|^(\d+)$/g)
-  let remain = parseFloat(change * 100).toPrecision(12)
 
   if (!validateRule.test(change)) {
     throw new Error('Invalid number format')
   }
+
+  let remain = parseFloat(change * 100).toPrecision(12)
 
   let result = money.map((m) => {
     let value = m.value * 100
