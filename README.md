@@ -4,3 +4,8 @@
 ```
 yarn start
 ```
+
+### How to run test
+```
+yarn test
+```
