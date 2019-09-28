@@ -9,6 +9,7 @@ export default class MoneyList extends React.Component {
       <MoneyContext.Consumer>
         {({ money }) => (
           <div>
+            <h3>Your change is</h3>
             { _chunk(money, 2).map((chunkMoney, chunkIndex) => {
               return (
                 <div className="row" key={`list-${chunkIndex}`}>
